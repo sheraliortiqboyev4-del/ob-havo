@@ -15,7 +15,7 @@ interface WeatherState {
   setCurrentCity: (city: City) => void;
   setLanguage: (lang: 'uz' | 'ru' | 'en') => void;
   setUnit: (unit: 'metric' | 'imperial') => void;
-  setTheme: (theme: 'light' | 'dark' | 'system') => void;
+  setTheme: (theme: 'light' | 'dark' | 'dynamic') => void;
 }
 
 export const useWeatherStore = create<WeatherState>()(

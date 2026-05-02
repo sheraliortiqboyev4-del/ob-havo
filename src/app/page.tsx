@@ -206,7 +206,7 @@ export default function Home() {
                       ].map((u) => (
                         <button
                           key={u.id}
-                          onClick={() => setUnit(u.id as any)}
+                          onClick={() => setUnit(u.id as 'metric' | 'imperial')}
                           className={`py-3 rounded-xl font-bold transition-all ${
                             unit === u.id 
                               ? 'bg-white text-black shadow-xl scale-105' 
@@ -233,7 +233,7 @@ export default function Home() {
                       ].map((item) => (
                         <button
                           key={item.id}
-                          onClick={() => setTheme(item.id as any)}
+                          onClick={() => setTheme(item.id as 'light' | 'dark' | 'dynamic')}
                           className={`py-3 rounded-xl font-bold transition-all ${
                             theme === item.id 
                               ? 'bg-white text-black shadow-xl scale-105' 
